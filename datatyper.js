@@ -57,6 +57,7 @@ function canRide(hasTicket, age) {
 // x < y, x <= y
 // x == y    x lika med y
 // x === y   x lika med y och samma datatyp
+// x != y    x inte lika med y
 
 // Automatisk typkonvertering
 // Så fort det är två olika datatyper i samma uttryck, omvandlas de till samma datatyp.
