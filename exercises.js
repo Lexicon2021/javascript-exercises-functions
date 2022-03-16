@@ -65,8 +65,37 @@ function add(bamse, skalman) {
 	let summa = bamse + skalman
 	return summa
 }
+// console.log( add(1, 2) )
 
-console.log( add(1, 2) )
 
 // let vs. var?
 // Använd alltid let eller const - det moderna sättet
+
+
+// 2b Skriv en funktion med namnet multi som multiplicerar tre tal och returnerar resultatet. Vad händer om man anropar funktionen med färre än tre parametrar?
+function multi(a, b, c) {
+	return a * b * c
+}
+// Kompaktare version:
+// const multi = (a, b, c) => a * b * c
+
+
+// 2c Skriv en funktion som tar fyra tal som parametrar. Den ska multiplicera de tre första och lägga ihop resultatet med den fjärde. Använd funktionerna add och multi.
+function multiAdd(m, n, o, p) {
+	let product = multi(m, n, o)
+	let sum = add(product, p)
+	return sum
+	// Kortare:
+	return add( multi(m, n, o), p )
+}
+// Namnförslag för funktionen:
+// multiAdd  - använder multi och add
+// combo     - kombinerar funktioner
+// tvåC      - koppling till övningsuppgift
+
+// console.log(multiAdd(2, 3, 4, 5))  // borde bli 29
+
+// , kommatecken
+// ; semikolon
+// : kolon
+// . punkt
