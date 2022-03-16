@@ -86,7 +86,7 @@ function multiAdd(m, n, o, p) {
 	let sum = add(product, p)
 	return sum
 	// Kortare:
-	return add( multi(m, n, o), p )
+	//return add( multi(m, n, o), p )
 }
 // Namnförslag för funktionen:
 // multiAdd  - använder multi och add
@@ -99,3 +99,51 @@ function multiAdd(m, n, o, p) {
 // ; semikolon
 // : kolon
 // . punkt
+
+
+// 5 Skriv ett program som skriver ut talen 1 till 16 med hjälp av en loop.
+// for( let i=1; i<17; i++ ) {  // i<=16
+// 	console.log(i)
+// }
+
+// 6 Skriv ett program som har talet 65536 i en variabel. Så länge som variabeln är större än 2 ska programmet loopa, skriva ut talet och sedan dela variabeln med 2.
+// let num = 65536
+/*while( num > 2 ) {
+	console.log(num)
+	num = num / 2   // num /= 2
+}*/
+/*for( ; num > 2; num /= 2 ) {
+	console.log(num)
+}*/
+
+// 6b Skriv en loop som räknar ut summan av talen 1 till och med 10.
+// Magic numbers - värden som upprepas i koden
+// 6c Paketera din loop i en funktion: function summa(min, max).
+function summa(min, max) {
+	let summanHittills = 0
+	for( let i=min; i<=max; i++ ) {
+		summanHittills += i
+	}
+	return summanHittills
+}
+
+/*
+let from = -100, to = 100
+let sum = summa(from, to)
+console.log(`Summan av talen ${from} till ${to} är: ${sum}.`)
+*/
+
+// 6d Skriv en loop som skriver ut talen 20 till 15, i den ordningen.
+// for( let i=20; i>=15; i-- ) {
+// 	console.log(i)
+// }
+
+// 6e Skriv en loop som skriver ut de jämna talen från 2 till 20
+for( let i=2; i<=20; i+=2 ) {
+	console.log(i)
+}
+// for( let i=2; i<=20; i++ ) {
+// 	if( i % 2 === 0 ) {
+// 		console.log(i)
+// 	}
+// }
